@@ -1,0 +1,11 @@
+services:
+  seq:
+    image: datalust/seq:2021.2
+    ports:
+    - "5341:80"
+    environment:
+    - ACCEPT_EULA=Y
+  redis:
+    image: redis:6.2.1-alpine
+    ports:
+    - "6379:6379"
